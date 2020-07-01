@@ -1,0 +1,9 @@
+
+’
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¬¦ØÍÿÿÿÿÿ8ù×Ğİ¯.
+i
+java:S1301–"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8¾æıß¯.
+>
+java:S1116$"Remove this empty statement.(ôŸìúÿÿÿÿ8½Êáà¯.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ª¾ßøÿÿÿÿ8½Êáà¯.
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(£¨‘Ÿ8È©Šá¯.
