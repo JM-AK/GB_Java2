@@ -23,3 +23,5 @@ b
 -lesson1/src/main/java/ru/gb/lesson1/Wall.java,1\f\1f0b10b8cd41ee6d87b7912a61b57da0f90accfc
 ]
 -lesson1/src/main/java/ru/gb/lesson1/Race.java,4\6\469fef578aabee27eabd55495788d0c182bc6c9a
+b
+2lesson2/src/main/java/ru/gb/lesson2/MainClass.java,c\b\cb1df15ffc7e0ed3e4c1aebdfece4345c672f583
