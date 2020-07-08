@@ -71,6 +71,14 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         add(panelBottom, BorderLayout.SOUTH);
 
         cbAlwaysOnTop.addActionListener(this);
+        messageField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                chatArea.append("\n" + messageField.getText());
+                messageField.setText("");
+            }
+        });
+
 
         setVisible(true);
     }
