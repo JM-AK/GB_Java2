@@ -33,3 +33,13 @@ b
 2lesson3/src/main/java/ru/gb/lesson3/PhoneBook.java,7\9\79e2259a11d025c31a462c1cc1422290c66734eb
 b
 2lesson3/src/main/java/ru/gb/lesson3/MainClass.java,8\b\8b66d20bd50340087dd87f382df557a37f1e4d15
+?
+lesson4/pom.xml,8\b\8b80ec1ab4dab2852c0dbab179d72f9b3c8e0523
+b
+2lesson4/src/main/java/ru/geekbrains/ServerGUI.java,a\2\a29dad3daba6b55274c15f07330ee0104c63a0c8
+b
+2lesson4/src/main/java/ru/geekbrains/ClientGUI.java,e\d\ed9e02ccf69d7e25758a57395a986b4b1213da1d
+;
+lesson4/log,a\3\a37a6671bb1daf87c15d7c1075582416f1ee1ea2
+c
+3lesson4/src/main/java/ru/geekbrains/ChatServer.java,3\d\3d82b03adff68fa3537624d1e8c4055356b9b480

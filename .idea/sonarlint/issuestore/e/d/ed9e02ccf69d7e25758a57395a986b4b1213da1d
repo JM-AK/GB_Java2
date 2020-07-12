@@ -1,0 +1,9 @@
+
+[	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(Ò©Ã£
+>
+java:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+J
+java:S1604J"(Make this anonymous inner class a lambda(½ËÐóûÿÿÿÿ8žš¹ü².
+C
+java:S1604 "(Make this anonymous inner class a lambda(Ô¶µÿþÿÿÿÿ
+Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(½ÃÍ–
