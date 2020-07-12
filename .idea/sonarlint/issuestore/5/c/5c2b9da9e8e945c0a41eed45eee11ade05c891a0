@@ -1,0 +1,21 @@
+
+c
+java:S2142s"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8«–‹ ´.
+b
+java:S2184N"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
+E
+java:S1068]"(Remove this unused "lock" private field.(ç±¯8ÿÙŸ´.
+b
+java:S2184N"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
+]	java:S125"<This block of commented-out lines of code should be removed.(²ó·èıÿÿÿÿ8Ş„š˜´.
+O
+java:S1128,"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‹‰°Ÿ´.
+{	java:S1150"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¨äüåşÿÿÿÿ8Éä¿˜´.
+b
+java:S2184N"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
+{	java:S115/"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥‚¼—úÿÿÿÿ8Ş„š˜´.
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(Ñ­Úüÿÿÿÿ8ŞÒÚ´.
+E
+java:S1148t"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«–‹ ´.
+I
+java:S2387\","arr" is the name of a field in "FirstTest".(İéÏ8½ÉˆŸ´.
