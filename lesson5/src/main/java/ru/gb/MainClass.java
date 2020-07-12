@@ -46,15 +46,22 @@ import java.util.Arrays;
 public class MainClass {
     static final int size = 10_000_000;
     static final int h = size / 2;
+    static float[] arr;
+    private static final Object lock = new Object();
 
     public static void main(String[] args) throws InterruptedException {
-        Thread t1 = new Thread(new FirstTest());
-        Thread t2 = new Thread(new SecondTest());
+        synchronized (lock){
+            arr = getUnitArray(size);
 
-        t1.start();
-        t1.join();
+            Thread t1 = new Thread(new FirstTest());
+            Thread t2 = new Thread(new SecondTest());
 
-        t2.start();
+            t1.start();
+            t1.join();
+
+            t2.start();
+
+        }
     }
 
     public static float[] getUnitArray(int size) {
@@ -66,8 +73,6 @@ public class MainClass {
     }
 
     public static class FirstTest implements Runnable {
-        float[] arr = getUnitArray(size);
-
         void printTestTime(long t) {
             String adjustmentLogMsg = String.format("Adjustment %s get: %d seconds", Thread.currentThread().getName(), t);
             System.out.println(adjustmentLogMsg);
@@ -89,9 +94,6 @@ public class MainClass {
     }
 
     public static class SecondTest extends FirstTest {
-        float[] arr = getUnitArray(size);
-        private static final Object lock = new Object();
-
         @Override
         public void run() {
             final long startTime = System.currentTimeMillis();
