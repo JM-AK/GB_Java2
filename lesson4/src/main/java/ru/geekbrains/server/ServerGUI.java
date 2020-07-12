@@ -1,4 +1,4 @@
-package ru.geekbrains;
+package ru.geekbrains.server;
 
 import javax.swing.*;
 import java.awt.*;
