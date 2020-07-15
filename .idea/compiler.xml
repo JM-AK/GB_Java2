@@ -10,6 +10,9 @@
         <module name="lesson3" />
         <module name="lesson2" />
         <module name="lesson1" />
+        <module name="network" />
+        <module name="chat-server" />
+        <module name="chat-client" />
         <module name="HomeWork" />
         <module name="lesson5" />
       </profile>
