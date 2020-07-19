@@ -1,3 +1,9 @@
 19.07.2020 15:41:38 <server>: /auth##denied
 19.07.2020 15:42:04 <server>: /auth##accept##sysroot
 19.07.2020 15:42:15 <server>: echo: привет
+19.07.2020 16:18:55 <server>: /auth##denied
+19.07.2020 16:19:12 <server>: /auth##accept##sysroot
+19.07.2020 16:19:36 <server>: echo: msg1
+19.07.2020 16:26:32 <server>: /auth##accept##alex-st
+19.07.2020 16:26:41 <server>: echo: fghj
+19.07.2020 16:37:44 <server>: echo: fjjff
