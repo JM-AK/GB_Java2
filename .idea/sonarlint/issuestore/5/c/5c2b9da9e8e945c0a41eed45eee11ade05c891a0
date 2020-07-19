@@ -1,0 +1,17 @@
+
+a
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8«–‹ ´.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(Ñ­Úüÿÿÿÿ8ŞÒÚ´.
+`
+java:S2184"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
+y	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¨äüåşÿÿÿÿ8Éä¿˜´.
+[	java:S125"<This block of commented-out lines of code should be removed.(²ó·èıÿÿÿÿ8Ş„š˜´.
+M
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‹‰°Ÿ´.
+y	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥‚¼—úÿÿÿÿ8Ş„š˜´.
+`
+java:S2184"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
+C
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«–‹ ´.
+`
+java:S2184"@Cast one of the operands of this integer division to a "double".(“¾§¼ÿÿÿÿÿ8ŞÒÚ´.
