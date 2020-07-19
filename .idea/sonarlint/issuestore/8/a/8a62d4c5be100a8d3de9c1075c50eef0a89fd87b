@@ -1,0 +1,30 @@
+
+K
+java:S2209'"5Change this instance-reference to a static reference.(ÔĞó
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(‰ì±Àùÿÿÿÿ
+>
+java:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(‹İ¶Û
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ
+\
+java:S2142("FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+\
+java:S21427"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+>
+java:S1148)"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(Â‰¿Ó
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+P
+java:S2209"5Change this instance-reference to a static reference.(ˆñ…‘üÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(œÀ¿âøÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(Ô·ê
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ïì×èûÿÿÿÿ
