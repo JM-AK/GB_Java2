@@ -113,7 +113,7 @@ public class ChatServer implements ServerSocketThreadListener, MessageSocketThre
     private void sendBroadcastMsg (String msg) {
         if (!clients.isEmpty()) {
             for (ClientSessionThread session : clients) {
-                session.sendMessage(msg);
+                session.sendMessage(MessageLibrary.getBroadcastMessage(session.getNickname(),msg));
             }
         }
     }
