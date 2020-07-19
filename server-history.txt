@@ -1,0 +1,3 @@
+19.07.2020 15:41:38 <server>: /auth##denied
+19.07.2020 15:42:04 <server>: /auth##accept##sysroot
+19.07.2020 15:42:15 <server>: echo: привет

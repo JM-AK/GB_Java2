@@ -14,6 +14,7 @@
         <module name="chat-server" />
         <module name="chat-client" />
         <module name="HomeWork" />
+        <module name="chat-library" />
         <module name="lesson5" />
       </profile>
     </annotationProcessing>
