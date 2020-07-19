@@ -5,7 +5,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 
-/*для чего нужен этот класс?*/
 public class ServerSocketThread extends Thread {
 
     private final int port;

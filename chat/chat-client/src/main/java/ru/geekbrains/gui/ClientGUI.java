@@ -1,5 +1,6 @@
 package ru.geekbrains.gui;
 
+import ru.geekbrains.chat.common.MessageLibrary;
 import ru.geekbrains.net.MessageSocketThread;
 import ru.geekbrains.net.MessageSocketThreadListener;
 
@@ -79,6 +80,8 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         add(panelTop, BorderLayout.NORTH);
         add(panelBottom, BorderLayout.SOUTH);
 
+        panelBottom.setVisible(false);
+
         cbAlwaysOnTop.addActionListener(this);
         buttonSend.addActionListener(this);
         messageField.addActionListener(this);
@@ -87,7 +90,6 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
 
         setVisible(true);
     }
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -104,9 +106,8 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
             } catch (IOException ioException) {
                 showError(ioException.getMessage());
             }
-
         } else if (src == buttonDisconnect) {
-            socketThread.interrupt();
+            socketThread.close();
         } else {
             throw new RuntimeException("Unsupported action: " + src);
         }
@@ -121,18 +122,24 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         showError(msg);
     }
 
+    /*
+     * Отправка сообщений в сторону сервера
+     */
     public void sendMessage(String user, String msg) {
         if (msg.isEmpty()) {
             return;
         }
         //23.06.2020 12:20:25 <Login>: сообщение
-        putMessageInChat(user, msg);
+        putMessageInChatArea(user, msg);
         messageField.setText("");
         messageField.grabFocus();
         socketThread.sendMessage(msg);
     }
 
-    public void putMessageInChat(String user, String msg) {
+    /*
+     * Добавление новых сообщений в окно чата
+     */
+    public void putMessageInChatArea(String user, String msg) {
         String messageToChat = String.format("%s <%s>: %s%n", sdf.format(Calendar.getInstance().getTime()), user, msg);
         chatArea.append(messageToChat);
         putIntoFileHistory(user, messageToChat);
@@ -151,8 +158,24 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
     }
 
     @Override
+    public void onSocketReady() {
+        panelTop.setVisible(false);
+        panelBottom.setVisible(true);
+        socketThread.sendMessage(MessageLibrary.getAuthRequestMessage(loginField.getText(), new String(passwordField.getPassword())));
+    }
+
+    @Override
+    public void onSocketClosed() {
+        panelTop.setVisible(true);
+        panelBottom.setVisible(false);
+    }
+
+    /*
+    * Получение сообщений от сервера
+     */
+    @Override
     public void onMessageReceived(String msg) {
-        putMessageInChat("server", msg);
+        putMessageInChatArea("server", msg);
     }
 
     @Override
