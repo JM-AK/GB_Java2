@@ -81,6 +81,7 @@ public class ChatServer implements ServerSocketThreadListener, MessageSocketThre
     private void processAuthorizedUserMessage(String msg) {
         logMessage(msg);
         clientSession.sendMessage("echo: " + msg);
+        sendBroadcastMsg(msg);
     }
 
     private void processUnauthorizedUserMessage(String msg) {
@@ -99,6 +100,7 @@ public class ChatServer implements ServerSocketThreadListener, MessageSocketThre
             return;
         }
         clientSession.authAccept(nickname);
+        clients.add(clientSession);
      }
 
     public void disconnectAll() {
@@ -107,4 +109,13 @@ public class ChatServer implements ServerSocketThreadListener, MessageSocketThre
     private void logMessage(String msg) {
         listener.onChatServerMessage(msg);
     }
+
+    private void sendBroadcastMsg (String msg) {
+        if (!clients.isEmpty()) {
+            for (ClientSessionThread session : clients) {
+                session.sendMessage(MessageLibrary.getBroadcastMessage(session.getNickname(),msg));
+            }
+        }
+    }
+
 }
