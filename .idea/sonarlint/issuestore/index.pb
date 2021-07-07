@@ -23,3 +23,13 @@ b
 -lesson1/src/main/java/ru/gb/lesson1/Wall.java,1\f\1f0b10b8cd41ee6d87b7912a61b57da0f90accfc
 ]
 -lesson1/src/main/java/ru/gb/lesson1/Race.java,4\6\469fef578aabee27eabd55495788d0c182bc6c9a
+b
+2lesson2/src/main/java/ru/gb/lesson2/MainClass.java,c\b\cb1df15ffc7e0ed3e4c1aebdfece4345c672f583
+?
+lesson3/pom.xml,d\3\d3300f08318f87da133025798a2204d062ecd4f6
+_
+/lesson3/src/main/java/ru/gb/lesson3/Person.java,0\c\0cbc67302a5513c308bf3c8b03afcbd27ca5c512
+b
+2lesson3/src/main/java/ru/gb/lesson3/PhoneBook.java,7\9\79e2259a11d025c31a462c1cc1422290c66734eb
+b
+2lesson3/src/main/java/ru/gb/lesson3/MainClass.java,8\b\8b66d20bd50340087dd87f382df557a37f1e4d15
